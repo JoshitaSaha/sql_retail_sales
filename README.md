@@ -8,8 +8,8 @@ Engineered a MySQL pipeline to clean, standardize, and optimize a raw dataset of
 * **Scalability:** Built multi-table operations and analytical queries optimized for large-scale transactional data.
 
 ## Tech Stack
-* **Database:** MySQL
-* **Key Techniques:** Window Functions, CTEs, Indexing, Data Cleaning
+  Database:MySQL
+  Key Techniques: Window Functions, CTEs, Indexing, Data Cleaning
   ## Code
   CREATE DATABASE sql_project_p1;
 DROP TABLE IF EXISTS Retail_sales;
@@ -73,17 +73,14 @@ category,
 COUNT(customer_id)
 FROM Retail_sales
 GROUP BY category
-**Key Findings**
+Key Findings
 
-* **Revenue Drivers:** Top 10% of customers account for over 45% of total sales revenue, driven primarily by repeat purchases in high-margin categories.
-* **Peak Purchasing Windows:** Transaction volume surges by 35% during weekend evenings (6 PM – 9 PM), highlighting optimal windows for targeted marketing campaigns.
-* **Customer Churn:** Identified a 22% customer drop-off after 90 days of inactivity, with single-purchase buyers representing the largest segment.
-* **Category Performance:** Electronics and Apparel generated the highest overall revenue, while Home Goods yielded the highest average order value (AOV).
+Revenue Drivers:Top 10% of customers account for over 45% of total sales revenue, driven primarily by repeat purchases in high-margin categories.
+Peak Purchasing Windows: Transaction volume surges by 35% during weekend evenings (6 PM – 9 PM), highlighting optimal windows for targeted marketing campaigns.
+Customer Churn: Identified a 22% customer drop-off after 90 days of inactivity, with single-purchase buyers representing the largest segment.
+Category Performance:Electronics and Apparel generated the highest overall revenue, while Home Goods yielded the highest average order value (AOV).
 
----
-
-**Reports & Analytics Delivered**
-
+Reports & Analytics Delivered
 * **Customer Segmentation Report:** Grouped 1M+ customers into Recency, Frequency, and Monetary (RFM) tiers to identify high-value vs. at-risk segments.
 * **Sales & Trend Analysis:** Aggregated monthly and quarterly revenue growth metrics, tracking seasonal demand patterns across product categories.
 * **Cohort Analysis:** Evaluated month-over-month customer retention cohorts to measure long-term customer lifetime value (LTV).
